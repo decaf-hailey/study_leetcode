@@ -1,6 +1,5 @@
 import Foundation
 
-
 // https://leetcode.com/problems/merge-strings-alternately/?envType=study-plan-v2&envId=leetcode-75
 class Solution1 {
     func mergeAlternately(_ word1: String, _ word2: String) -> String {
@@ -53,3 +52,17 @@ class Solution2 {
 
 Solution2().mergeAlternately("ab", "cdefg")//3ms
 //Solution1().mergeAlternately("ab", "cdefg") //15ms
+
+
+// ---------------------------------------------
+let array = ["a", "b", "c", "d", "e"]
+
+array.startIndex  // 0
+array.count       // 5
+array.endIndex    // 5
+
+let slice = array[1..<4]  // elements are "b", "c", "d"
+
+slice.startIndex  // 1
+slice.count       // 3
+slice.endIndex    // 4
